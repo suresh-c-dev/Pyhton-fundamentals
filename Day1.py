@@ -1,4 +1,4 @@
-#Formated String function
+#Formated String function.
 def greet(name):
     return f"Hello ,{name}!"
 
