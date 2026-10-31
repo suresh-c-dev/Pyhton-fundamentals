@@ -1,6 +1,6 @@
 #Formated String function.
 def greet(name):
-    return f"Hello ,{name}!"
+    return f"Hello, {name}!"
 
 print(greet("Suresh"))
 print(greet("Uday Surya"))
@@ -8,8 +8,8 @@ print(greet("Uday Surya"))
 #sum function
 def add(a,b):
     return a+b
-print("Sum of 2 numbers: ",sum(10,20))
-print("Sum of 2 numbers: ",sum(100,234))
+print("Sum of 2 numbers: ",add(10,20))
+print("Sum of 2 numbers: ",add(100,234))
 
 #To find Even Function
 def is_even(num):
