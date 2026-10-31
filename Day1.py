@@ -1,12 +1,12 @@
 #Formated String function
 def greet(name):
-    return f"Hello,{name}!"
+    return f"Hello ,{name}!"
 
 print(greet("Suresh"))
 print(greet("Uday Surya"))
 
 #sum function
-def sum(a,b):
+def add(a,b):
     return a+b
 print("Sum of 2 numbers: ",sum(10,20))
 print("Sum of 2 numbers: ",sum(100,234))
