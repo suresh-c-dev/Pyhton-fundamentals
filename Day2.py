@@ -54,3 +54,20 @@ result=[students,originalmarks]
 print(result[1][0],"\n",len(result))
 print(top)
 print(marks[0])
+
+
+ # Program 4: tuples - slice, unpack, *rest, list vs tuple copy.
+  
+student=("Tony",21,"USA")
+subject=["Kannada","English","Computer Science"]
+name,age,city=student
+print(name,age,city)
+print(student[-2:])
+subject_t=tuple(subject)
+subject.append("Hindi")
+print(subject,"\n",subject_t)
+first,*rest=subject_t
+print(first,"\n",rest)
+name,city=city,name
+print(name,"\n",city)
+#student[0]="x" -ERROR----tuple' object does not support item assignment----
