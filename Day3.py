@@ -1,3 +1,6 @@
+#     --1.Stock basics: read, add, update, delete with a dict--
+
+print("\n---PROGRAM: 1---\n")
 stock = {"rice": 20, "sugar": 10, "oil": 5}
 
 print(stock["rice"])
@@ -9,10 +12,12 @@ removed = stock.pop("sugar")
 
 print(stock)
 print(removed)
-print(len(stock))
+print(len(stock),)
 
-######################################################################################################
 
+#      --2.Canteen: count orders, money earned, top item, stock update (dict combined)--
+
+print("\n---PROGRAM: 2---\n")
 orders = ["dosa", "idli", "dosa", "vada", "dosa", "idli", "pizza", "vada", "dosa"]
 
 menu = {
@@ -49,7 +54,11 @@ for item,qty in count.items():
     else:
         print(item,"not available")
 print(menu)
-#################################################################################################
+
+
+#       --3.Stationery shop: serve only if stock is enough (if inside if)--
+
+print("\n---PROGRAM: 3---\n")
 requests = ["pen", "pen", "book", "pen", "ink", "book", "pen", "ruler"]
 
 shop = {
@@ -73,13 +82,11 @@ for item,qty in count.items():
     else:
         print(item,"not available")
 print(shop)
-###################################################
 
 
+#         --4.Hostel mess: breakfast vs dinner groups (set operations)--
 
-
-
-
+print("\n---PROGRAM: 4---\n")
 
 breakfast = ["Ravi", "Anu", "Ravi", "Kiran", "Manu", "Anu"]
 dinner = ["Anu", "Suma", "Kiran", "Suma", "Divya"]
@@ -92,12 +99,11 @@ print("Students who ate both Breakfast and dinner: ",breakfast_set.intersection(
 print("Students who ate any meal: ",breakfast_set.union(dinner_set))
 print("Students who ate breakfast but not Dinner: ",breakfast_set.difference(dinner_set))
 print("Students who ate Dinner but not Brakfast: ",dinner_set.difference(breakfast_set))
-################################################
 
 
+#      --5.Gym: tuple + list + set + dict together, pending fees--
 
-
-
+print("\n---PROGRAM: 5---\n")
 gym = ("Fit Club", 2026)
 signups = ["Ravi", "Anu", "Ravi", "Kiran", "Anu", "Ravi", "Manu"]
 paid = {"Anu", "Manu", "Suma"}
@@ -128,11 +134,11 @@ print("signed up persons: ",count)
 print("signed but not paid:",signed.difference(paid))
 print("paid but not signed: ",paid.difference(signed))
 print(human,"signed",times_signed,"times")
-   #################################################
 
 
+#       --6.College clubs: dict of sets, most clubs, ties handled--
 
-
+print("\n---PROGRAM: 6---\n")
 clubs = {
     "Coding": {"Ravi", "Anu", "Kiran"},
     "Music": {"Anu", "Suma", "Manu"},
