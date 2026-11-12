@@ -1,23 +1,25 @@
-#                      ---Program 1: Name Fixer---
+#                      ---Program 1: Form cleaner---
 
 print("\n------program 1 output------\n")
 
+raw = "  uday SURYA kumar NAIK | uday@Yahoo.COM | tiptur  "
+clean = raw.strip()
 
-raw = "  suresh KUMAR | suresh.kumar@Gmail.COM | turuvekere  "
-clean=raw.strip()
+s = clean.split("|")
 
-s=clean.split("|")
-capital_1=s[0].split()[0].capitalize()
-capital_2=s[0].split()[1].capitalize()
-capital="".join([capital_1," ",capital_2])
+fixed = []
+for w in s[0].split():
+    fixed.append(w.capitalize())
+capital = " ".join(fixed)
 
-gmail=s[1].strip().lower()
-div=gmail.partition("@")
-city=s[2].strip().capitalize()
+gmail = s[1].strip().lower()
+div = gmail.partition("@")
+city = s[2].strip().capitalize()
 
-valid_id=gmail.endswith("@gmail.com")
+valid_id = gmail.endswith(("@gmail.com", "@yahoo.com"))
 
 print(f"{capital} | {div[0]} | {valid_id} | {city}")
+
 
 #                              ---Program 2: Signup Form Check---
 
