@@ -18,7 +18,7 @@ def normal_bill(shop):
     return normal_price
 def boss(shop):
     discounted=discount_list(shop)
-    print("Discounted itmes: ",list(discounted.keys()))
+    print("Discounted itmes: " ,list(discounted.keys()))
     total_bill=discounted_bill(discounted)+normal_bill(shop)
     print("Bill with discount: ",total_bill)
   
