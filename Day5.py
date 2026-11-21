@@ -60,10 +60,10 @@ def normal_bill(shop):
         if price<100:
             normal_price=normal_price+price
     return normal_price
-def boss(shop):
+def report(shop):
     discounted=discount_list(shop)
     print("Discounted itmes: " ,list(discounted.keys()))
     total_bill=discounted_bill(discounted)+normal_bill(shop)
     print("Bill with discount: ",total_bill,"\n")
   
-boss({"pen": 10, "book": 150, "bag": 500, "pencil": 5})
+report({"pen": 10, "book": 150, "bag": 500, "pencil": 5})
