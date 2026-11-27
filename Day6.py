@@ -44,5 +44,5 @@ if os.path.exists(backup_path):
 os.rename(stock_path,backup_path)
 
 print(os.path.exists(stock_path))
-print(os.path.exists(backup_path))
+print(os.path.exists(backup_path ))
 print("Directory: ",os.listdir(folder))
